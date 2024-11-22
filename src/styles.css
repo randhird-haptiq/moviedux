@@ -7,7 +7,7 @@
 
 /* Typography */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
   background-color: #121212;
 }
@@ -25,7 +25,7 @@ body {
 .search-input {
   padding: 15px;
   margin: 25px 10px;
-  width: 100%;
+  width: 50%;
   font-size: 16px;
   border-radius: 100px;
   border: 1px solid #ccc;
@@ -34,14 +34,22 @@ body {
 /* Genre and Filter Bar Styles */
 .filter-bar {
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 .filter-slot {
   background-color: #2c2c2c;
-  padding: 0 25px;
+  padding: 10px 25px;
   margin: 10px;
   border-radius: 50px;
+}
+
+.filter-slot label {
+  margin-right: 5px;
+}
+
+.filter-slot select {
+  padding: 10px;
 }
 
 .filter-dropdown {
@@ -53,10 +61,11 @@ body {
 }
 
 /* Movies Grid Styles */
-.movies-grid, .watchlist {
+.movies-grid,
+.watchlist {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
-  gap: 2rem 2rem;  
+  gap: 2rem 2rem;
   padding: 1rem;
   justify-content: center;
 }
@@ -67,7 +76,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .movie-card:hover {
@@ -98,7 +107,7 @@ body {
 .movie-card-rating {
   font-size: 0.9rem;
   font-weight: bold;
-  background:#141414;
+  background: #141414;
   padding: 3px 10px;
   margin: 0 auto;
   width: 50px;
@@ -113,7 +122,7 @@ body {
 /* Watchlist Button Styles */
 .watchlist-btn {
   border: none;
-  background: #2196F3;
+  background: #2196f3;
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -121,7 +130,6 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
 
 /* Footer Styles */
 .footer {
@@ -173,7 +181,7 @@ nav {
 
 ul {
   list-style-type: none;
-  margin: 0;  
+  margin: 0;
   display: flex;
   justify-content: center;
 }
@@ -183,16 +191,16 @@ ul li {
 }
 
 nav a {
-  color:black;
+  color: black;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 50px;
   background-color: #ffffff;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 nav a:hover {
-  background-color: #E7F2F1;
+  background-color: #e7f2f1;
   color: black;
 }
 
@@ -218,7 +226,7 @@ nav a:hover {
   right: 0;
   bottom: 0;
   background-color: #141414;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 34px;
 }
 
@@ -230,16 +238,16 @@ nav a:hover {
   left: 2px;
   bottom: 2px;
   background-color: white;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 50%;
 }
 
 .slider-label {
-  color: #fff; 
-  font-size: 12px; 
-  width: 100%; 
-  line-height: 24px; 
-  transition: opacity 0.4s ease; 
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  line-height: 24px;
+  transition: opacity 0.4s ease;
 }
 
 input:checked + .slider:before {
@@ -247,5 +255,5 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-  background-color: #FFA100;
+  background-color: #ffa100;
 }
